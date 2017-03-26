@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructmapDI", "StructmapDI\StructmapDI.csproj", "{14AAF52A-90F3-47B9-9420-C1341B9D6AB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorDI", "MediatorDI\MediatorDI.csproj", "{69840005-A6F3-4F48-A2E0-386DB3C35D92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{14AAF52A-90F3-47B9-9420-C1341B9D6AB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14AAF52A-90F3-47B9-9420-C1341B9D6AB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14AAF52A-90F3-47B9-9420-C1341B9D6AB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69840005-A6F3-4F48-A2E0-386DB3C35D92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69840005-A6F3-4F48-A2E0-386DB3C35D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69840005-A6F3-4F48-A2E0-386DB3C35D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69840005-A6F3-4F48-A2E0-386DB3C35D92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

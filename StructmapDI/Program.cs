@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StructmapDI
+﻿namespace StructmapDI
 {
+    using MediatorDI;
+    using System;
+
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            var sample = Ioc.Container.GetInstance<SampleController>();
+            sample.DoSomething(new DoSomethingReq { Input = true });
+            Console.ReadLine();
         }
     }
 }

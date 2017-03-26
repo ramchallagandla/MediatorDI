@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{14AAF52A-90F3-47B9-9420-C1341B9D6AB7}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>StructmapDI</RootNamespace>
-    <AssemblyName>StructmapDI</AssemblyName>
+    <ProjectGuid>{69840005-A6F3-4F48-A2E0-386DB3C35D92}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MediatorDI</RootNamespace>
+    <AssemblyName>MediatorDI</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -45,21 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DoSomethingHandler.cs" />
-    <Compile Include="DoSomethingReq.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Registries\BaseRegistry.cs" />
+    <Compile Include="IMediator.cs" />
+    <Compile Include="IocContainer.cs" />
+    <Compile Include="IRequest.cs" />
+    <Compile Include="IRequestHandler.cs" />
+    <Compile Include="Mediator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SampleController.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MediatorDI\MediatorDI.csproj">
-      <Project>{69840005-a6f3-4f48-a2e0-386db3c35d92}</Project>
-      <Name>MediatorDI</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
